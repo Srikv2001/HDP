@@ -61,3 +61,7 @@ jobs:
           app-name: 'HeartDiseasePrediction'
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_02475FEA40B1498DBC86553B70C2AC75 }}
+       
+      # Retrieve the URL of the deployed web app
+      - name: Get Web App URL
+        run: echo "Web App URL - ${{ steps.deploy-to-webapp.outputs.webapp-url }}"
