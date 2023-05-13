@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Prediction Results</title>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style1.css') }}">
+</head>
+<body>
+	<h1>Prediction Results</h1>
+	<div id="gifs">
+		<img src="{{ url_for('static', filename='GIF.gif') }}" alt="Example GIF">
+	</div>
+	
+	<div id="content">
+	{% if results is defined %}
+		{% if results['Heart Disease'] == 'High' %}
+			<h2>The Person have a high risk of heart disease. Please consult a doctor immediately.</h2>
+		{% elif results['Heart Disease'] == 'Medium' %} 
+			<h2> The Person have a risk of heart disease.</h2>
+		{% else %} 
+			<h2>Congratulations! The Person have a low risk of heart disease.</h2>
+		{% endif %}
+		
+
+		
+	{% else %}
+		<p>No prediction results found.</p>
+	{% endif %}
+	
+	<br><br>
+	
+	<a class="btn" href="/">Back to home page</a>
+			
+</div>	
+</body>
+</html>
+
+
+

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Heart Disease Prediction</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style2.css') }}">
+
+</head>
+
+<body>
+
+    <nav>
+        <div id="heading">
+            HEART DISEASE PREDICTION
+          </div>
+        <a href="/">Home</a>
+        <a href="{{ url_for('prediction') }}">Prediction</a>
+       
+        <a href="{{ url_for('about') }}">About</a>
+    </nav>
+    <div id="cont">
+        
+
+        <h1>
+            ABOUT
+        </h1>
+
+
+        Welcome to our Heart Disease Prediction Web Application. This application uses various machine learning
+        algorithms to predict the likelihood of a person having heart disease based on various input parameters.
+        <br><br>
+        We have used a dataset of 303 patients with 14 attributes such as age, sex, chest pain type, resting blood
+        pressure, cholesterol levels, fasting blood sugar, resting electrocardiographic results, maximum heart rate
+        achieved, exercise-induced angina, ST depression induced by exercise relative to rest, slope of the peak
+        exercise ST segment, number of major vessels colored by fluoroscopy, and thalassemia. The dataset was split
+        into training and testing sets, and various machine learning algorithms were trained on the training set.
+        <br><br>
+        The user can input various parameters such as age, sex, chest pain type, etc. and our web application will
+        use the trained models to predict the likelihood of the user having heart disease. The application uses six
+        machine learning algorithms: Logistic Regression, Random Forest, Decision Tree, Naive Bayes, Multi Layer
+        Perception, and Support Vector Machine. The application also provides the likelihood of the user having low,
+        medium, or high risk of heart disease.
+        <br><br>
+
+        We hope you find our Heart Disease Prediction Web Application useful and informative.
+        </h3>
+
+        <h1>
+            DATASET
+        </h1>
+        <img src="{{url_for('static', filename='Data.jpg')}}" align="middle" />
+        <h1>
+            Thank you for using
+            our application!
+        </h1>
+        <br>
+</body>
+
+</html>

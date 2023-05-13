@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Heart Disease Prediction</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style3.css') }}">
+
+</head>
+
+<body>
+    <nav>
+        <div id="heading">
+            HEART DISEASE PREDICTION
+          </div>
+        <a href="/">Home</a>
+        <a href="{{ url_for('prediction') }}">Prediction</a>
+        <a href="{{ url_for('algorithm') }}">Algorithms</a>
+        <a href="{{ url_for('about') }}">About</a>
+    </nav>
+
+    <div id="cont">
+        <h1>
+             Algorithms for heart disease prediction:
+        </h1>
+        
+        <h3>
+            <b>Decision Tree:</b><br> &nbsp; &nbsp; &nbsp;A decision tree algorithm is a classification algorithm that predicts
+            the target variable by dividing the input features into a tree-like structure of decisions and outcomes. It
+            recursively partitions the data into subsets based on the values of the input features, and at each step,
+            chooses the feature that maximally reduces the uncertainty in the target variable. It is easy to understand
+            and interpret, but can overfit the data if the tree is too deep.
+            <br><br>
+            Support Vector Machine (SVM): <br>&nbsp; &nbsp; &nbsp;SVM is a binary classification algorithm that finds
+            the hyperplane which maximally separates the two classes. The hyperplane is chosen so that the margin
+            between the two classes is maximized. SVM can be extended to multi-class problems using one-vs-all or
+            one-vs-one schemes. It is effective in high-dimensional spaces and can be used with various kernel functions
+            to handle nonlinearly separable data.
+            <br><br>
+            Multi-Layer Perception (MLP):<br>&nbsp; &nbsp; &nbsp; MLP is a neural network algorithm that consists of
+            multiple layers of nodes, where each node computes a linear combination of its inputs followed by a
+            non-linear activation function. The output of the network is produced by the final layer of nodes, which
+            typically uses a softmax activation function for classification problems. MLP can be trained using
+            backpropagation algorithm to minimize the loss function.
+            <br><br>
+            Random Forest:<br>&nbsp; &nbsp; &nbsp; Random forest is an ensemble algorithm that combines multiple
+            decision trees by randomly selecting a subset of features and samples for each tree. Each tree in the forest
+            is grown independently using a random subset of the data, and the final prediction is obtained by taking the
+            mode of the predictions of all the trees. Random forest is effective in handling high-dimensional data and
+            can handle missing values.
+            <br><br>
+            Logistic Regression: <br>&nbsp; &nbsp; &nbsp;Logistic regression is a binary classification algorithm that
+            models the probability of the target variable using a logistic function. It assumes a linear relationship
+            between the input features and the logarithm of the odds ratio, and estimates the coefficients of the linear
+            model using maximum likelihood estimation. Logistic regression can be extended to handle multi-class
+            problems using one-vs-all or softmax regression.
+            <br><br>
+            Naive Bayes: <br>&nbsp; &nbsp; &nbsp;Naive Bayes is a probabilistic algorithm that assumes conditional
+            independence between the input features given the target variable. It models the probability of the target
+            variable given the input features using Bayes' theorem and estimates the conditional probabilities using the
+            training data. Naive Bayes is simple, fast and works well with high-dimensional data, but can be negatively
+            affected by correlated features.
+            <br><br>
+        </h3>
+    </div>
+    <br>
+</body>
+
+</html>

@@ -1,0 +1,126 @@
+
+  
+  body {
+    margin: 80px;
+    padding:0;
+    font-family: sans-serif;
+    background: linear-gradient(#141e30, #243b55);
+    background-attachment: fixed;
+  
+  }
+  
+  
+  h1 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #fff;
+  }
+  h2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align:justify;
+    color: #fff;
+  }
+ 
+  
+  #cont {
+    color: #ffffff;
+    width:fit-content;
+    text-align: justify;
+    line-height: 30px;
+    
+    margin-top: 95px;
+    margin-left: 0px;
+    position: absolute;
+    top: 114%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 880px;
+    padding: 40px;
+    background: rgba(0,0,0,.5);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    border-radius: 10px;
+  }
+  
+  p {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  label {
+    color: #fff;
+    display: block;
+    margin-bottom: 8px;
+    
+  }
+  
+  
+  nav {
+    position: fixed;
+    top: 5px;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    background-color: linear-gradient(#141e30, #243b55);
+    padding: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    align-items:center;
+    display:block;
+    justify-content: space-between;
+    text-align: right;
+  }
+  
+  nav a {
+    color: #ffffff;
+    font-weight: bold;
+    text-decoration: none;
+    margin-right: 20px;
+    transition: color 0.2s ease-in-out;
+  }
+  
+  nav a:hover {
+    color: #000;
+  }
+  
+  nav a:last-child {
+    margin-right: 0;
+  }
+  
+  nav button {
+    border: none;
+    background-color: transparent;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  
+  nav button:focus {
+    outline: none;
+  }
+  
+  nav button svg {
+    width: 1.5em;
+    height: 1.5em;
+    fill: #555;
+  }
+  
+  @media (max-width: 768px) {
+    nav {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    nav a {
+      margin-right: 0;
+      margin-bottom: 10px;
+      display: block;
+    }
+  }
+  #heading{
+    float: left;
+    color: #fff;
+    font-weight: bold;
+  }
+  

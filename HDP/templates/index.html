@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Heart Disease Prediction</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}">
+
+</head>
+
+<body>
+  <nav>
+    <div id="heading">
+    HEART DISEASE PREDICTION
+  </div>
+    <a href="/">Home</a>
+    <a href="{{ url_for('prediction') }}">Prediction</a>
+    <a href="{{ url_for('about') }}">About</a>
+  </nav>
+  <div id="cont">
+    <h1>
+      HEART DISEASE PREDICTION
+          </h1>
+    
+    <h3>
+      Welcome to our Heart Disease Prediction Model using Machine Learning project! Our goal with this project is to
+      develop an accurate and reliable predictive model for heart disease, using data analysis and machine learning
+      techniques.
+      <br><br>
+      Heart disease is a serious and widespread health concern that affects millions of people around the world. By
+      accurately predicting the risk of heart disease, we can help healthcare professionals take preventive measures and
+      provide timely treatment, ultimately improving patient outcomes and saving lives.
+      <br><br>
+      We believe that our project has the potential to make a significant impact on public health. By accurately
+      predicting the risk of heart disease, we can help healthcare professionals take preventive measures and provide
+      timely treatment, ultimately improving patient outcomes and saving lives.
+      <br><br>
+      We hope you find our Heart Disease Prediction Web Application useful and informative.
+      
+    </h3>
+    
+    </div>
+    <div id="photo">
+      <img src="{{ url_for('static', filename='111.jpg') }}" alt="My Image">
+    </div>
+</body>
+
+</html>
